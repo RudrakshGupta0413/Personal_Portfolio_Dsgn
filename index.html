@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/6b277bfd06.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style-2.css">
     <link rel="shortcut icon" href="images/logo.png">
+    <script src="js/script.js"></script>
     <title>Dhruv Personal Portfolio</title>
 </head>
 <body>
+    <!-----------------HEADER SECTION------------------>
     <div id="header">
         <div class="container" id="section-1">
             <nav>
                 <img src="images/logo.png" class="logo" alt="logo">
                 <ul class="nav">
-                    <li><a href="#section-1">Home</a></li>
-                    <li><a href="#section-2">About</a></li>
-                    <li><a href="#section-3">Services</a></li>
-                    <li><a href="#section-4">Portfolio</a></li>
-                    <li><a href="#section-5">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -35,23 +37,27 @@
             <a href="/Dhruv(2).pdf" target="_blank" class="btn btn2">Download CV</a>
         </div>
     </div>
+
+    <!----------------------ABOUT SECTION--------------------->
+
     <div id="about">
         <div class="container" id="section-2">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-photo">
                    <img src="images/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer.jpg" alt="about">
                 </div>
-                <div class="about-col-2">
+
+                <div class="about-col-data">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am a student and a good listener. I am keen to learn new things.<br>
-                       I also have good grasping power which helps me learning<br>
-                       new things effectively.</p>
-                       
+                    <p class="abt-para">Hello there! My name is Dhruv, and I'm a motivated  computer science student with a love for creating mobile apps. I have the capacity to quickly understand new ideas and apply them because I'm an excellent listener. My area of specialisation is Flutter, and I'm always looking for ways to learn more and improve. Through my work, I try to provide novel solutions that enhance people's lives. I can't wait to work with like-minded professionals in the field to develop cutting-edge mobile applications. Please follow me for additional details about my work and interests in Flutter and app development.
+                    </p>
+
                        <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                        </div>
+
                        <div class="tab-contents active-tab" id="Skills">
                         <ul>
                           <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
@@ -59,12 +65,15 @@
                           <li><span>App Development</span><br>Building Android apps</li>
                         </ul>
                        </div>
+
                        <div class="tab-contents" id="Experience">
                         <ul>
-                          <li><span>2022 - Current</span><br>Android Lead in Google DSC at MIET</li>
-                          <li><span>2021 - 2022</span><br>Intership at IIT Madras</li>
+                          <li><span>2022 - Present</span><br>Vice President at CXI</li>
+                          <li><span>2022 - 2023</span><br>Google Crowdsource Influencer</li>
+                          <li><span>2022 - 2023</span><br>Android Lead at GDSC MIET</li>
                         </ul>
                        </div>
+
                        <div class="tab-contents" id="Education">
                         <ul>
                           <li><span>2021 - Current</span><br>B.Tech CSE from MIET, Meerut</li>
@@ -77,7 +86,7 @@
         </div>
     </div>
 
-    <!--------------------------SERVICES----------------------------->
+    <!--------------------------SERVICES SECTION----------------------------->
     <div id="services">
         <div class="container" id="section-3">
             <h1 class="sub-title">My Services</h1>
@@ -85,74 +94,113 @@
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App Design</h2>
-                    <p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
-                        tincidunt sit amet sapien quis.</p>
-                    <a href="#">Learn more</a>
+                    <p> Developing mobile applications for Android and iOS platforms using Flutter framework.</p>
+                  <!--<a href="#">Learn more</a>-->
                 </div>
                 <div>
                     <i class="fa-sharp fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
-                        tincidunt sit amet sapien quis.</p>
-                    <a href="#">Learn more</a>
+                    <p>Creating user interfaces and user experiences for mobile apps and web interfaces that are visually appealing, easy to use, and functional.</p>
+                   <!-- <a href="#">Learn more</a>-->
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
-                        tincidunt sit amet sapien quis.</p>
-                    <a href="#">Learn more</a>
+                    <p>Creating visually appealing, user-friendly, and responsive web interfaces using HTML, CSS, and JavaScript.
+                    </p>
+                  <!--  <a href="#">Learn more</a>-->
                 </div>
             </div>
         </div>
     </div>
 
-    <!---------------------PORTFOLIO------------------------>
-    <div id="portfolio">
-        <div class="container" id="section-4">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/4092.jpg" alt="pic">
-                    <div class="layer">
-                        <h3>Weather App</h3>
-                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                        <a href="#">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <!---------------------PROJECTS SECTION------------------------>
+    <section id="projects">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/4092.jpg" alt="Card image" style="width:30%">
+                        <div class="card-body">
+                            <h4 class="card-title">Weather App</h4>
+                            <p class="card-text">The app connects you to the talented people around the world. Download it from play store.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn">Link</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/3049301_430484-PE7QCZ-278.jpg" alt="pic">
-                    <div class="layer">
-                        <h3>Full Stack WhatsApp Clone</h3>
-                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                        <a href="#">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/3049301_430484-PE7QCZ-278.jpg" alt="Card image" style="width:30%">
+                        <div class="card-body">
+                            <h4 class="card-title">Full Stack WhatsApp Clone</h4>
+                            <p class="card-text">The app connects you to the talented people around the world. Download it from play store.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/10363352_194.jpg" alt="pic">
-                    <div class="layer">
-                        <h3>Tik Tok</h3>
-                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/WhatsApp Image 2022-09-27 at 10.57.30.jpg" alt="pic">
-                    <div class="layer">
-                        <h3>KBC App</h3>
-                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
-                        <a href="#">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/10363352_194.jpg" alt="Card image" style="width:30%">
+                        <div class="card-body">
+                            <h4 class="card-title">TikTok Clone</h4>
+                            <p class="card-text">The app connects you to the talented people around the world. Download it from play store.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#" target="_blank" class="btn">See more</a>
-        </div>
-    </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Messaging Service</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!------------------CONTACT------------------>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!------------------CONTACT SECTION----------------->
     <div id="contact">
         <div class="container" id="section-5">
             <div class="row">
@@ -184,34 +232,6 @@
         </div>
     </div>
     
-    <script>
-
-        var tablinks = documents.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyz9HFLtmCqW6-zIJI_JDEdL4cL6bBaJY73_wKse0gWv6xXu5e6LplYdWOWzXmVObc7Kw/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+   
 </body>
 </html>
